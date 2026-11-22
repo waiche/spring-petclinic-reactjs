@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import { IRouter, Link } from 'react-router';
+import { Link } from 'react-router';
 import { url, submitForm } from '../../util';
 
 import Input from '../form/Input';

@@ -1,7 +1,5 @@
-// React and Hot Loader
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { AppContainer } from 'react-hot-loader';
 
 import { browserHistory as history } from 'react-router';
 
@@ -12,20 +10,12 @@ import Root from './Root';
 
 // Render Application
 const mountPoint = document.getElementById('mount');
-ReactDOM.render(
-  <AppContainer><Root history={history}/></AppContainer>,
-  mountPoint
-);
+ReactDOM.render(<Root history={history}/>, mountPoint);
 
 declare var module: any;
 if (module.hot) {
   module.hot.accept('./Root', () => {
     const NextApp = require('./Root').default;
-    ReactDOM.render(
-      <AppContainer>
-        <NextApp history={history} />
-      </AppContainer>,
-      mountPoint
-    );
+    ReactDOM.render(<NextApp history={history} />, mountPoint);
   });
 }
