@@ -2,18 +2,16 @@
   "compilerOptions": {
     "jsx": "react",
     "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": false,
     "noImplicitAny": false,
     "preserveConstEnums": true,
     "removeComments": true,
-    "target": "ES6",
-    "allowJs": true,
-    "outDir": "public/dist",
+    "target": "ES2015",
+    "lib": ["ES2015", "DOM"],
+    "types": ["node", "jest"],
+    "skipLibCheck": true,
     "sourceMap": true
   },
-  "exclude": [
-    "node_modules",
-    "typings/browser.d.ts",
-    "typings/browser",
-    "tests"
-  ]
+  "include": ["src"]
 }

@@ -17,9 +17,9 @@ interface IEditPetPageProps {
 }
 
 interface IEditPetPageState {
-  pet?: IEditablePet;
-  owner?: IOwner;
-  pettypes?: ISelectOption[];
+  pet: IEditablePet;
+  owner: IOwner;
+  pettypes: ISelectOption[];
 };
 
 export default class EditPetPage extends React.Component<IEditPetPageProps, IEditPetPageState> {

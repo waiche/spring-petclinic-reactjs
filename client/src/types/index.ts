@@ -1,4 +1,4 @@
-import { IRouter } from 'react-router';
+import { InjectedRouter as IRouter } from 'react-router';
 
 // ------------------------------------ ROUTER ------------------------------------
 export interface IRouterContext {

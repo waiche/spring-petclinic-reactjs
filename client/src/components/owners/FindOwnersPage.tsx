@@ -1,6 +1,7 @@
 import * as React from 'react';
 
-import { IRouter, Link } from 'react-router';
+import { Link } from 'react-router';
+import { Location } from 'history';
 import { IOwner, IRouterContext } from '../../types';
 import { url } from '../../util';
 
@@ -8,7 +9,7 @@ import OwnersTable from './OwnersTable';
 
 
 interface IFindOwnersPageProps {
-  location: HistoryModule.Location;
+  location: Location;
 }
 
 interface IFindOwnersPageState {

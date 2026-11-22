@@ -14,9 +14,9 @@ interface INewPetPageProps {
 }
 
 interface INewPetPageState {
-  pet?: IEditablePet;
-  owner?: IOwner;
-  pettypes?: ISelectOption[];
+  pet: IEditablePet;
+  owner: IOwner;
+  pettypes: ISelectOption[];
 };
 
 const NEW_PET: IEditablePet = {
